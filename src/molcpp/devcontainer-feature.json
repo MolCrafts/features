@@ -1,11 +1,12 @@
 {
     "name": "molcpp",
     "id": "molcpp",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "molcpp devcontainer feature",
     "dependsOn": {
         "ghcr.io/molcrafts/features/utils:latest": {},
-        "ghcr.io/molcrafts/features/miniforge:latest": {}
+        "ghcr.io/molcrafts/features/miniforge:latest": {},
+        "ghcr.io/msclock/features/vcpkg:2": {}
     },
     "customizations": {
         "vscode": {

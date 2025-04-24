@@ -42,10 +42,10 @@ apt-get update -y && apt-get install -y kitware-archive-keyring cmake && rm -rf 
 wget -qO- https://apt.llvm.org/llvm.sh | bash -s -- 20
 clangd-20 --version
 clang++-20 --version
-update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++-20 90
+update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++-20 100
 update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-20 100
 #
 apt-get upgrade
 
 # Install xtensor and related libraries using conda
-conda install -c conda-forge xtensor xtensor-blas xtl xsimd
+# conda install -c conda-forge xtensor xtensor-blas xtl xsimd xtensor-python
