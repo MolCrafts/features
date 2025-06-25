@@ -1,0 +1,30 @@
+{
+  "name": "molpy",
+  "id": "molpy",
+  "version": "0.0.2",
+  "description": "A feature for setting up Python development environment with common molecular science packages",
+  "licenseURL": "https://github.com/MolCrafts/features/blob/main/LICENSE",
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true
+    },
+    "ghcr.io/devcontainers/features/anaconda:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "options": {
+    "installJupyter": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install Jupyter Lab and related packages"
+    }
+  }
+}
