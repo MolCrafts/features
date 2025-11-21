@@ -1,7 +1,7 @@
 {
   "name": "molvis",
   "id": "molvis",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "molvis devcontainer feature",
   "dependsOn": {
     "ghcr.io/molcrafts/features/molpy:latest": {},
