@@ -5,8 +5,10 @@ set -e
 # Optional: Import test library
 source dev-container-features-test-lib
 
-# Definition specific tests
-check "test vim" vim --version
+check "crates" cargo --version
+check "rust" rustc --version
+check "python" python --version
+check "conda" conda --version
 
 # Report result
 reportResults
