@@ -1,0 +1,19 @@
+{
+    "cpu": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+        "features": {
+            "molnex": {
+                "backend": "cpu"
+            }
+        }
+    },
+    "cuda": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+        "features": {
+            "molnex": {
+                "backend": "cuda",
+                "cudaVersion": "12.1"
+            }
+        }
+    }
+}
